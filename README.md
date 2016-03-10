@@ -21,15 +21,18 @@ for installation info:
 	http://nokogiri.org/tutorials/installing_nokogiri.html
 
 Then, run all tests with:
+
 	rake
 
 Cruise-monitor is shipped with a sample configure script. To init the configuration, run:
+
 	rake init
 
-Then, simply edit SERVER and MONITOR into 'script/config.rb'.
+Then, simply edit SERVER and MONITOR into `script/config.rb`.
 
 Try to run it:
-	`rake monitor`
+
+	rake monitor
 
 Finally, you can schedule a cron job (with `crontab -e`), like this:
 
