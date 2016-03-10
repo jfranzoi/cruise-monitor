@@ -1,4 +1,4 @@
-=== What's this?
+# What's this?
 
 Cruise-monitor is, well, a monitor to CruiseControl.rb build status, via RSS feed. It uses
 MacOS 'say' command for notifications.
@@ -9,7 +9,7 @@ CruiseControl.NET and Jenkins (formerly known as Hudson) are supported, plans ar
 For any additional info and documentation, please refer to:
 	https://github.com/sourcesense/cruise-monitor/wiki
 
-=== How to use it:
+# How to use it:
 
 Cruise-monitor is a ruby script. It requires gem and rake.
 
@@ -29,9 +29,9 @@ Cruise-monitor is shipped with a sample configure script. To init the configurat
 Then, simply edit SERVER and MONITOR into 'script/config.rb'.
 
 Try to run it:
-	rake monitor
+	`rake monitor`
 
-Finally, you can schedule a cron job (with crontab -e), like this:
+Finally, you can schedule a cron job (with `crontab -e`), like this:
 
 	*/5 * * * * $path_to_cruise_monitor/bin/monitor.sh
 
@@ -42,7 +42,7 @@ monitor.sh as an executable file, with:
 
 That's it. Have fun, and keep the build clean!
 
-=== How to deploy:
+# How to deploy:
 
 Cruise-monitor build services currently available are:
 
@@ -56,7 +56,7 @@ Apache), verify EC2 credential are stored into ~/.ec2/build.pem file. Then run:
 
 This should be enough.
 
-=== License:
+# License:
 
 Licensed under the Apache License, Version 2.0. See LICENSE for details.
 
